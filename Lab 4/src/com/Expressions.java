@@ -94,9 +94,26 @@ public class Expressions {
         one_expression.check_paranthesis();
         one_expression.compute_value();
 
+//        [output]
+//        File: one_expression.txt
+//        2 * 4 + (3 +6 * 9 -    12 * (2*9 - 15))  + 2 +(-4)*((2 - 15))
+//        OK
+//        Result 1: 83
+
         fileName = "three_expressions.txt";
         Expressions three_expression = new Expressions(path, fileName);
         three_expression.check_paranthesis();
         three_expression.compute_value();
+//        [output]
+//        File: three_expressions.txt
+//        1. 2x - 3y + 25 / (2+5)*12 - ((29*4-2) + 32) -14
+//        OK
+//        2. 2x - 3y + 25 / (-((29*4-2) + 32) -14 - (2+5)*12
+//        OK
+//        3. ((((((((((((((((((((2x-4y * 98 )))))))))))))))))))))
+//        Error: Too many closed parentheses
+//        Result 1: Missing operator.
+//        Result 2: Missing operator.
+//        Result 3: Missing operator.
     }
 }
