@@ -26,6 +26,8 @@ public class Main {
         };
 
         arr[3] = circle;
+        System.out.println(circle.getArea());
+        System.out.println(circle.getPerimeter());
         System.out.println(figureController.biggestArea(arr).getArea());
         System.out.println(figureController.biggestPerimeter(arr).getPerimeter());
     }
